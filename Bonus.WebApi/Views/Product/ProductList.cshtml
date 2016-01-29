@@ -1,0 +1,22 @@
+﻿<body ng-app="ProductApp">
+    <h1>Product List</h1>
+    <div ng-controller="ProductController">
+        <table ng-repeat="product in products" border="1">
+            <tr>
+                <td>{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.category}}</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+<div ng-app="">
+    <p>Name : <input type="text" ng-model="name"></p>
+    <h1>Hello {{name}}</h1>
+</div>
+@Scripts.Render("~/Scripts/app/ProductListController.js")
+
+

@@ -1,0 +1,10 @@
+﻿<body ng-app="ProductAdd">
+    <script src="ProductAddController.js"></script>
+    <h2>Add New Product</h2>
+    <form ng-submit="submit()" ng-controller="ProductAddController">
+        <div>Name:<input type="text" ng-model="Name" required></div></br>
+        <div>Type:<input type="text" ng-model="Type" required> </div> </br>
+        <div>Price:<input type="text" ng-model="Price"> </div> </br>
+        <div> <input type="submit" id="productsubmit" value="Submit" /></div> </br>
+    </form>
+</body>
